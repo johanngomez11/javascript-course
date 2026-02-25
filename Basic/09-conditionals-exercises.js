@@ -6,17 +6,91 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=8652
 // if/else/else if/ternaria
 
 // 1. Imprime por consola tu nombre si una variable toma su valor
+let myName = "Johann"
+
+if(myName == "Johann"){
+    console.log("El nombre es Johann")
+}
 
 // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
+let user = "johann123"
+let password = 123
+
+if (user == "johann123" && password === 123) {
+    console.log("Usted inició sesión.")
+} else {
+    console.log("Usuario o contraseña incorrecto.")
+}
 
 // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
+let number = 11
+
+if (number > 0) {
+    console.log("El número es positivo")
+} else if (number < 0) {
+    console.log("El número es negativo")
+} else {
+    console.log("El número es 0")
+}
 
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+let age = 11
+
+if (age >= 18) {
+    console.log("La persona puede votar")
+} else {
+    console.log(`A la persona le faltan ${18 - age} años`)
+}
 
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad 
+const isAdult = age == 17 ? "Es mayor de edad" : "No es mayor de edad"
+console.log(isAdult)
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+let month = 8
+let season
+
+switch (month) {
+    case 3:
+    case 4: 
+    case 5:
+        season = "Primavera"
+        break
+    case 6:
+    case 7: 
+    case 8:
+        season = "Verano"
+        break
+    case 9:
+    case 10: 
+    case 11:
+        season = "Otoño"
+        break
+    case 12:
+    case 1: 
+    case 2:
+        season = "Invierno"
+        break
+    default:
+        season = "Número de mes incorrecto"
+}
+console.log(season)
+
+// Otra manera
+if (month >= 3 && month <= 5){
+    season = "Primavera"
+} else if (month >= 6 && month <= 8){
+    season = "Verano"
+} else if (month >= 9 && month <= 11){
+    season = "Otoño"
+} else if (month === 12 || month <= 2){
+    season = "Invierno"
+} else {
+    season = "Número de mes incorrecto"
+}
+
+console.log(season)
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
 
