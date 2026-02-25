@@ -93,7 +93,6 @@ if (month >= 3 && month <= 5){
 console.log(season)
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
-
 // switch
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
